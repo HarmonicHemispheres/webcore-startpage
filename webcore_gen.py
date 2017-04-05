@@ -23,7 +23,7 @@ font_bar_margin = "0px"
 
 img_size = "85px"
 hover_speed = "0.2s"
-hover_animation_dist = "15px"       # recommended range is 0px - 50px, but 0px is safest
+hover_animation_dist = "5px"       # recommended range is 0px - 50px, but 0px is safest
 hover_strength = "0.3"              # range is 0 - 1
 
 # ===== Web Terminal & Search Options =====
