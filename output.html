@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>WebCore StartPage</title>
+    <style>
+            
+            body{
+                background-color: #003333;
+            }
+            .container:hover .overlay {
+                opacity: 0.3;     
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .overlay {
+                opacity: 1;
+                transition: 0.2s ease;
+            }   
+            #main{
+                background-color: #008080;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+            #gsearch{
+                height: 30px;
+                font-size: 15px;
+                text-align: center;
+                width: 90%;
+            }
+            #webterm{
+                height: 30px;
+                font-size: 15px;
+                text-align: center;
+                width: 90%;
+            }
+            #fast_links{
+                background-color: #008080;
+                display: inline-block;
+                margin: 10px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            #links{
+                display: inline-block;
+            }
+            #colpic{
+                width: 500px;
+                height: 500px;
+            }
+            #caleandar{
+                background-color: #008080;
+                color: #111111;
+                padding: 10px;
+                border: solid black 5px;
+            }
+            input[type=text] {
+                background-color: #4dffff;
+                color: #001a1a;
+                border: none;
+            }
+            img{
+                vertical-align: bottom;
+                
+            }
+            #titles{
+                font-family: arial;
+                color: #003333;
+                font-size: 15px;
+                letter-spacing: 1px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+    </style>
+    <link rel="stylesheet" href="css/theme2.css"/>
+
+    </head>
+    <body>
+        <script type="text/javascript" src="js/checks.js"></script>
+        <br><br><br><br>
+        <div id="main" align="center">
+            <br><br>
+            <form method="get" action="https://www.google.com/search">
+                <input id="gsearch" type="text" name="q" size="90%" value="" placeholder="search google" />
+            </form>
+            <br>
+            <form action="#" onsubmit='launchTerm(document.getElementById("webterm"))'>
+                <input id="webterm" type="text" size="90%" value="" placeholder="web terminal (type help)" />
+            </form>
+            <br><br>
+        </div>
+        <br>
+        <center>
+        <div id="help" style="background-color: #008080; display: none;" >
+            <table cellspacing=10px style="border-spacing: 50px 0;" >
+                <tr> <th>Command</th> <th>Function</th></tr>
+                <tr> <td>help</td> <td>toggles this help box</td></tr>
+                <tr> <td>color</td> <td>toggles w3schools color picker</td></tr>
+                <tr> <td>cal</td> <td>toggles to a calendar </td></tr>
+            </table>
+        </div>
+        <div id="links">
+            <div id="colpic" style="display: none;">
+                <iframe id="colpic" src="https://www.w3schools.com/colors/colors_picker.asp"></iframe>
+            </div>
+
+            <div id="caleandar" style="display: none;">
+
+            </div>
+
+            <script type="text/javascript" src="js/caleandar.js"></script>
+            <script type="text/javascript" src="js/basic.js"></script>            <div id="fast_links">
+              <p id='titles'>MATH</p>
+                 <!--                 --><a class="container" href="http://www.derivative-calculator.net/"><img class="overlay" src="icons/dercalc.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="http://www.wolframalpha.com/"><img class="overlay" src="icons/wolfram.jpg" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://www.desmos.com/calculator"><img class="overlay" src="icons/desmos_graph.png" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            <div id="fast_links">
+              <p id='titles'>MEDIA</p>
+                 <!--                 --><a class="container" href="https://www.facebook.com/"><img class="overlay" src="icons/fb.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://www.reddit.com/"><img class="overlay" src="icons/reddit.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://www.youtube.com/"><img class="overlay" src="icons/youtube.png" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            <div id="fast_links">
+              <p id='titles'>MUSIC</p>
+                 <!--                 --><a class="container" href="https://bandcamp.com/"><img class="overlay" src="icons/bandcamp.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://soundcloud.com/stream"><img class="overlay" src="icons/sc.png" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            <div id="fast_links">
+              <p id='titles'>PROGRAMMING</p>
+                 <!--                 --><a class="container" href="https://github.com/"><img class="overlay" src="icons/github.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://repl.it/sessions"><img class="overlay" src="icons/repl_it.jpg" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://www.w3schools.com/"><img class="overlay" src="icons/w3s.jpg" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            <div id="fast_links">
+              <p id='titles'>RESOURCES</p>
+                 <!--                 --><a class="container" href="https://docs.python.org/3/"><img class="overlay" src="icons/py3docs.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://docs.unity3d.com/Manual/index.html"><img class="overlay" src="icons/unity.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://en.wikipedia.org/wiki/Main_Page"><img class="overlay" src="icons/wikip.png" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            <div id="fast_links">
+              <p id='titles'>STORES</p>
+                 <!--                 --><a class="container" href="https://www.amazon.com/gp/yourstore/home/140-4211866-0728842?ie=UTF8&action=sign-out&path=%2Fgp%2Fyourstore%2Fhome&ref_=nav_youraccount_signout&signIn=1&useRedirectOnSuccess=1&"><img class="overlay" src="icons/amazon.png" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://www.etsy.com/"><img class="overlay" src="icons/etsy.png" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            <div id="fast_links">
+              <p id='titles'>WEB</p>
+                 <!--                 --><a class="container" href="https://my.bluehost.com/cgi/cpanel"><img class="overlay" src="icons/bluehost.jpg" width="85px" height="85px"></img></a><!--                 --><a class="container" href="https://www.digitalocean.com/"><img class="overlay" src="icons/dig_ocn.png" width="85px" height="85px"></img></a><!--                 -->
+            </div>
+            </center>
+            <br><br><br>
+        </body>
+</html> 
