@@ -4,7 +4,7 @@ A fun and expandable Web browser Startpage Generator written in python 3.6
 <br>
 <br>
 
-![webcore](info/webcore-demo.png)
+![webcore]( webcore-startpage/Info/webcore-demo.png )
 
 # OVERVIEW
 The purpose of webcore is to provide a script which can generate an easily customizable html file for you to set as your homepage on any browser. 
