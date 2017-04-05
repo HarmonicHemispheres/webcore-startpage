@@ -13,7 +13,7 @@ The purpose of webcore is to provide a script which can generate an easily custo
 To use the program, minimal work is required. 
 
 ### 1) clone the repo
-`% git clone ___`
+`% git clone https://github.com/HarmonicHemispheres/webcore-startpage.git`
 
 ### 2) add links to data.txt 
 Webcore uses takes the links and images referenced in data.txt to generate html in webcore_gen.py. Every line in data.txt should follow:<br>
